@@ -1,0 +1,64 @@
+/* .node{
+  border: 1px solid blue;
+  border-radius: 2px;
+} */
+
+/* To remove the space between the left-line div and right-line div
+   both are separately contained in col-md-6*/
+.col-md-6{
+  padding: 0;
+}
+
+.circle{
+  font-family: "Audiowide";
+  height: 40px;
+  width: 40px;
+  padding:7px;
+  background-color: gray;
+  color:white;
+  border-radius:50%;
+  text-align: center;
+  transition-delay: .3s;
+  transition-duration: 1s;
+}
+
+.selected{
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  font-weight: 400;
+  transition-delay: .3s;
+}
+
+.green{
+  background-color: #3d991e;
+}
+
+[class*="line-"]{
+  height: 10px;
+  background: linear-gradient(#3d991e, #3d991e),
+              linear-gradient(gray, gray);
+  background-size: 2px 0, 2px 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+.line-left-top{
+  background-position: 100% 0, 100% 0;
+}
+.line-right-top{
+  background-position: 0% 0, 0% 0;
+}
+.line-left-bottom{
+  background-position: 100% 0, 100% 0;
+  transition-delay: 0.5s;
+}
+.line-right-bottom{
+  background-position: 0% 0, 0% 0;
+  transition-delay: 0.5s;
+}
+
+
+.completed{
+  background-size: 2px 100%, 2px 100%;
+}
